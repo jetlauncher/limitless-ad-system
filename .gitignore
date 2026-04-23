@@ -42,3 +42,8 @@ out/
 *.bak
 *.swp
 *~
+
+# Campaign folders — kept local, not committed
+# The campaigns/ folder itself is tracked (via .gitkeep) so the structure is visible in git.
+campaigns/*
+!campaigns/.gitkeep

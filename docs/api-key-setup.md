@@ -12,8 +12,11 @@ To generate ad copy and images with Claude, you need an API key from at least on
 | Access many models (GPT-4, Claude, Gemini, Flux, etc.) through one account | OpenRouter key |
 | Use DALL-E for image generation | OpenAI API key |
 | Use open-source image models (SDXL, Flux) | OpenRouter key |
+| Run the generator scripts (text only) | Either key works |
 
 You only need one. Start with whichever you already have access to.
+
+The generator scripts (`scripts/generate_campaign_assets.py`) use the same key for text generation. They do not generate images — that's a separate step.
 
 ---
 
@@ -58,7 +61,7 @@ Your key will look like: `sk-or-...`
 
 ## Adding Your Key to the Project
 
-### For Claude Code users
+### For Claude Code users and generator scripts
 
 1. Copy `.env.example` to a new file called `.env`:
 
@@ -78,14 +81,30 @@ Your key will look like: `sk-or-...`
    OPENROUTER_API_KEY=sk-or-your-actual-key-here
    ```
 
-3. Set the provider and model to match:
+3. Set the text provider and model (used by the generator scripts):
+
+   ```
+   TEXT_PROVIDER=openai
+   TEXT_MODEL=gpt-4.1-mini
+   ```
+
+   `gpt-4.1-mini` is a good low-cost starting point. Move up to a stronger model when you want sharper concept quality.
+
+4. Set the image provider and model if you plan to generate images:
 
    ```
    IMAGE_PROVIDER=openai
    IMAGE_MODEL=dall-e-3
    ```
 
-4. Save the file. Claude Code will read it automatically.
+5. Save the file. Claude Code and the generator scripts both read it automatically.
+
+If you want to use OpenRouter instead, switch to:
+
+```
+TEXT_PROVIDER=openrouter
+TEXT_MODEL=openai/gpt-4.1-mini
+```
 
 ### For Claude Cowork users
 
@@ -106,6 +125,8 @@ Do not paste your API key into any file you plan to share or upload to GitHub.
 
 ## Next Steps
 
-Once your key is in place, follow the brand intake process:
+Once your key is in place:
 
 - [docs/brand-intake.md](brand-intake.md) — Prepare your creative direction before generating ads
+- [docs/generator-workflow.md](generator-workflow.md) — Use the Python scripts to generate concepts and copy
+- [docs/setup-with-claude-code.md](setup-with-claude-code.md) — Full workflow using Claude Code in the terminal

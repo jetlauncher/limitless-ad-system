@@ -16,7 +16,7 @@ This guide walks you through the full setup: adding your API key, preparing your
 
 ## Step 0 — Add Your API Key
 
-Before Claude can generate anything, it needs a key.
+Before Claude (or the generator scripts) can generate anything, they need a key.
 
 ```bash
 cp .env.example .env
@@ -99,7 +99,38 @@ Claude Code will read your image files, check the folder structure, and update `
 
 ## Step 5 — Generate Ad Copy Variations
 
-Once your brief is in place, ask Claude to generate variations:
+You have two options here:
+
+**Option A — Generator scripts (faster for large batches):**
+
+```bash
+# No extra packages needed
+python3 scripts/bootstrap_campaign.py --name "my campaign"
+```
+
+That creates a timestamped campaign folder inside `campaigns/` with:
+- `briefs/`
+- `outputs/`
+- `assets/originals/`
+- `assets/alternatives/`
+
+Put your campaign request in the `briefs/` folder of the created directory, then run:
+
+```bash
+python3 scripts/generate_campaign_assets.py \
+    --campaign campaigns/<timestamp-slug> \
+    --brand brand/generated-briefs/brand-brief.md \
+    --request campaigns/<timestamp-slug>/briefs/my-request.md
+```
+
+The script calls OpenAI or OpenRouter for **concept + copy generation** and saves:
+- `outputs/concepts.generated.md`
+- `outputs/copy-pack.generated.md`
+- `outputs/manifest.generated.json`
+
+See [docs/generator-workflow.md](generator-workflow.md) for the full walkthrough.
+
+**Option B — Ask Claude directly:**
 
 ```
 Based on my campaign brief, generate 10 ad copy variations — one for each of these angles:
@@ -120,11 +151,13 @@ Review the output, pick the strongest variations, and use them when briefing you
 
 ## Step 6 — Add Your Images
 
-Drop your image files into:
+Drop your image files into the appropriate folder:
 
 ```
-assets/originals/     ← your 2-3 hero concepts
-assets/alternatives/  ← your variation images
+assets/originals/            ← your 2-3 hero concepts
+assets/alternatives/         ← your variation images
+campaigns/<timestamp-slug>/assets/originals/     ← campaign-specific hero images
+campaigns/<timestamp-slug>/assets/alternatives/  ← campaign-specific variation images
 ```
 
 Use this naming format:
@@ -137,6 +170,14 @@ Then ask Claude Code to sync the manifest:
 My images are now in assets/originals/ and assets/alternatives/.
 Please scan those folders and update manifest.json to include all the images.
 Use my campaign angles and notes from the brief we discussed.
+```
+
+If you used the generator scripts, you can also merge the draft directly:
+
+```
+The manifest draft is in campaigns/<timestamp-slug>/outputs/manifest.generated.json.
+Please review it and merge the entries into manifest.json.
+Update any image paths that don't match the actual files.
 ```
 
 ---

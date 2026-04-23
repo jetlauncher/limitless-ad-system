@@ -14,6 +14,12 @@ This guide is for students who prefer a visual, no-terminal workflow. It covers 
 - Asking questions about how the system works
 - Reviewing the review board itself in a side-by-side layout
 
+## About the Generator Scripts
+
+The generator scripts (`scripts/bootstrap_campaign.py` and `scripts/generate_campaign_assets.py`) run in a terminal and are not available inside Claude Cowork. If you have terminal access, see [docs/generator-workflow.md](generator-workflow.md) for a faster way to produce concept and copy drafts before your Cowork session.
+
+If you're working entirely in Cowork, the manual workflow below covers the same ground — it just involves more back-and-forth with Claude directly.
+
 ---
 
 ## Step 1 — Get the Starter Kit
@@ -47,6 +53,7 @@ Upload the following files from your `limitless-ad-system` folder at the start o
 - `manifest.json`
 - `brand/generated-briefs/brand-brief.md` (your brand brief — see Step 4)
 - `examples/agent-workshop/brief.md` (as a reference example, optional)
+- `examples/sample-brand-brief.md` (as a format reference, optional)
 - `templates/ad-brief-template.md`
 
 ---
@@ -209,6 +216,14 @@ Claude: Got it. Here are 5 manifest entries for those objections, one per image 
 
 You: Yes please. Keep each hook under 10 words.
 ```
+
+---
+
+## Have Terminal Access?
+
+If you can run Python in a terminal, the generator scripts can give you a starting draft before your Cowork session — concepts, copy, and a manifest outline — so you spend your session refining rather than starting from scratch.
+
+See [docs/generator-workflow.md](generator-workflow.md) for how to use them.
 
 ---
 
