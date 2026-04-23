@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "v01-no-code",
+    "title": "ไม่ต้องเขียนโค้ด / ก็สร้าง AI Agent ได้",
+    "angle": "Non-Technical",
+    "template": "split",
+    "file": "v01-no-code.png",
+    "tag": "for non-technical owners",
+    "proof": "Claude Cowork + Manus AI",
+    "cta": "ขอรายละเอียด workshop"
+  },
+  {
+    "slug": "v02-start-right",
+    "title": "คุณไม่ต้องเก่งเทค / แค่ต้องเริ่มให้ถูก",
+    "angle": "Non-Technical",
+    "template": "statement",
+    "file": "v02-start-right.png",
+    "tag": "start the right way",
+    "proof": "Designed for business owners",
+    "cta": "ดูรายละเอียดรอบเรียน"
+  },
+  {
+    "slug": "v03-not-for-devs-only",
+    "title": "AI Agent / ไม่ได้มีไว้สำหรับโปรแกรมเมอร์",
+    "angle": "Non-Technical",
+    "template": "poster",
+    "file": "v03-not-for-devs-only.png",
+    "tag": "ai agents are not just for developers",
+    "proof": "1 Day Intensive Workshop",
+    "cta": "ทักเพื่อรับข้อมูลเพิ่ม"
+  },
+  {
+    "slug": "v04-chatgpt-only",
+    "title": "ถ้าคุณใช้ ChatGPT / เป็นอย่างเดียว",
+    "angle": "Awareness",
+    "template": "split",
+    "file": "v04-chatgpt-only.png",
+    "tag": "if you only use chatgpt",
+    "proof": "Beyond prompts",
+    "cta": "รับรายละเอียด workshop"
+  },
+  {
+    "slug": "v05-behind",
+    "title": "ถ้าธุรกิจคุณยังไม่มี / AI Agent สักตัว",
+    "angle": "Awareness",
+    "template": "statement",
+    "file": "v05-behind.png",
+    "tag": "business urgency",
+    "proof": "Leverage > headcount",
+    "cta": "ดูว่า workshop นี้ช่วยอะไรได้บ้าง"
+  },
+  {
+    "slug": "v06-repeat-work",
+    "title": "งานซ้ำ ๆ หลายอย่าง / ควรถูกย้ายให้ AI ทำแล้ว",
+    "angle": "Pain",
+    "template": "poster",
+    "file": "v06-repeat-work.png",
+    "tag": "stop repeated work",
+    "proof": "Practical business workflows",
+    "cta": "ขอรายละเอียดเวิร์กช็อป"
+  },
+  {
+    "slug": "v07-more-leverage",
+    "title": "เจ้าของธุรกิจยุคนี้ / ไม่ต้องเพิ่มคนก่อนเสมอไป",
+    "angle": "Pain",
+    "template": "split",
+    "file": "v07-more-leverage.png",
+    "tag": "leverage",
+    "proof": "Build systems in 1 day",
+    "cta": "เช็กรอบ workshop"
+  },
+  {
+    "slug": "v08-busy-back",
+    "title": "ซื้อเวลาคืนให้ตัวเอง / ด้วย AI Agent",
+    "angle": "Pain",
+    "template": "statement",
+    "file": "v08-busy-back.png",
+    "tag": "buy back your time",
+    "proof": "For busy founders",
+    "cta": "รับรายละเอียดตอนนี้"
+  },
+  {
+    "slug": "v09-operator",
+    "title": "ไม่ใช่แค่ใช้ AI / แต่ใช้มันเป็น operator",
+    "angle": "Mechanism",
+    "template": "poster",
+    "file": "v09-operator.png",
+    "tag": "mechanism",
+    "proof": "Claude Cowork + Manus AI",
+    "cta": "ดูรายละเอียดรอบถัดไป"
+  },
+  {
+    "slug": "v10-practical-stack",
+    "title": "Claude Cowork / + Manus AI",
+    "angle": "Mechanism",
+    "template": "split",
+    "file": "v10-practical-stack.png",
+    "tag": "practical stack",
+    "proof": "Hands-on workshop",
+    "cta": "ลงชื่อรับรายละเอียด"
+  },
+  {
+    "slug": "v11-system-not-demo",
+    "title": "จากการดูเดโม / ไปสู่การสร้างระบบจริง",
+    "angle": "Mechanism",
+    "template": "statement",
+    "file": "v11-system-not-demo.png",
+    "tag": "from demo to system",
+    "proof": "Business-first training",
+    "cta": "ขอรายละเอียด workshop"
+  },
+  {
+    "slug": "v12-one-day",
+    "title": "1 Day AI Agent / Builder Workshop",
+    "angle": "Offer",
+    "template": "poster",
+    "file": "v12-one-day.png",
+    "tag": "1 day intensive",
+    "proof": "For non-technical business owners",
+    "cta": "ดูวันจัดรอบถัดไป"
+  },
+  {
+    "slug": "v13-learn-and-build",
+    "title": "เรียน 1 วัน / แล้วกลับไปสร้างต่อได้เลย",
+    "angle": "Offer",
+    "template": "split",
+    "file": "v13-learn-and-build.png",
+    "tag": "learn and build",
+    "proof": "Workshop-led implementation",
+    "cta": "รับรายละเอียดรอบเรียน"
+  },
+  {
+    "slug": "v14-clear-invite",
+    "title": "เวิร์กช็อปนี้ / ออกแบบมาเพื่อเจ้าของธุรกิจ",
+    "angle": "Offer",
+    "template": "statement",
+    "file": "v14-clear-invite.png",
+    "tag": "workshop invite",
+    "proof": "No technical background required",
+    "cta": "ขอข้อมูลเพิ่มเติม"
+  },
+  {
+    "slug": "v15-founder-belief",
+    "title": "AI ไม่ได้มีไว้เล่น / แต่มันมีไว้เพิ่มกำไร",
+    "angle": "Founder Authority",
+    "template": "split",
+    "file": "v15-founder-belief.png",
+    "tag": "founder belief",
+    "proof": "Jedi Trinupab",
+    "cta": "ดู workshop นี้"
+  },
+  {
+    "slug": "v16-jedi-teaches",
+    "title": "Jedi จะสอนให้คุณ / เริ่มสร้าง AI Agent เป็น",
+    "angle": "Founder Authority",
+    "template": "poster",
+    "file": "v16-jedi-teaches.png",
+    "tag": "taught by jedi",
+    "proof": "Founder-led training",
+    "cta": "รับรายละเอียดทันที"
+  },
+  {
+    "slug": "v17-real-business",
+    "title": "นี่ไม่ใช่คอร์ส AI ทั่วไป / แต่มันคือการใช้ AI กับธุรกิจจริง",
+    "angle": "Founder Authority",
+    "template": "statement",
+    "file": "v17-real-business.png",
+    "tag": "business application",
+    "proof": "Built for operators",
+    "cta": "เช็กรายละเอียด workshop"
+  },
+  {
+    "slug": "v18-objection-too-early",
+    "title": "ถ้าคุณคิดว่า / ยังเร็วเกินไป",
+    "angle": "Objection Handling",
+    "template": "split",
+    "file": "v18-objection-too-early.png",
+    "tag": "objection handling",
+    "proof": "Start before you feel ready",
+    "cta": "ดูว่าเริ่มยังไงใน workshop"
+  },
+  {
+    "slug": "v19-objection-too-tech",
+    "title": "ถ้าคุณคิดว่า / เรื่องนี้เทคนิคเกินไป",
+    "angle": "Objection Handling",
+    "template": "poster",
+    "file": "v19-objection-too-tech.png",
+    "tag": "too technical?",
+    "proof": "No coding-first approach",
+    "cta": "รับรายละเอียดรอบถัดไป"
+  },
+  {
+    "slug": "v20-objection-no-time",
+    "title": "ถ้าคุณบอกว่า / ไม่มีเวลาเรียน AI",
+    "angle": "Objection Handling",
+    "template": "statement",
+    "file": "v20-objection-no-time.png",
+    "tag": "no time?",
+    "proof": "Time saved compounds",
+    "cta": "ดูรายละเอียด workshop"
+  },
+  {
+    "slug": "v21-result-faster-team",
+    "title": "ทีมเร็วขึ้น / โดยไม่ต้องวุ่นวายเพิ่ม",
+    "angle": "Outcome",
+    "template": "split",
+    "file": "v21-result-faster-team.png",
+    "tag": "outcome",
+    "proof": "Clarity + leverage",
+    "cta": "ขอรายละเอียดเพิ่ม"
+  },
+  {
+    "slug": "v22-result-better-ops",
+    "title": "เริ่มจาก workshop เดียว / แต่ต่อยอดเป็นระบบได้ทั้งบริษัท",
+    "angle": "Outcome",
+    "template": "poster",
+    "file": "v22-result-better-ops.png",
+    "tag": "better operations",
+    "proof": "System thinking for founders",
+    "cta": "ดูรอบ workshop"
+  },
+  {
+    "slug": "v23-result-confident",
+    "title": "จากคนที่ยังงงเรื่อง AI / ไปสู่คนที่เริ่มออกแบบระบบได้",
+    "angle": "Outcome",
+    "template": "statement",
+    "file": "v23-result-confident.png",
+    "tag": "confidence",
+    "proof": "Built for non-technical owners",
+    "cta": "รับรายละเอียด workshop"
+  },
+  {
+    "slug": "v24-compare-before-after",
+    "title": "ก่อน workshop / คุณแค่ลองใช้ AI",
+    "angle": "Reframe",
+    "template": "split",
+    "file": "v24-compare-before-after.png",
+    "tag": "before / after",
+    "proof": "From prompts to systems",
+    "cta": "ดูรายละเอียดรอบถัดไป"
+  },
+  {
+    "slug": "v25-chatbot-vs-agent",
+    "title": "AI ไม่ได้จบแค่การพิมพ์ถามตอบ / มันไปต่อถึง agent ได้",
+    "angle": "Reframe",
+    "template": "poster",
+    "file": "v25-chatbot-vs-agent.png",
+    "tag": "chatbot vs agent",
+    "proof": "Practical next step",
+    "cta": "ขอข้อมูล workshop"
+  },
+  {
+    "slug": "v26-operator-mindset",
+    "title": "เจ้าของธุรกิจที่ได้เปรียบ / คือคนที่เริ่มคิดเป็นระบบ",
+    "angle": "Reframe",
+    "template": "statement",
+    "file": "v26-operator-mindset.png",
+    "tag": "operator mindset",
+    "proof": "Operator-first framing",
+    "cta": "เช็กรอบเรียน"
+  },
+  {
+    "slug": "v27-classroom-energy",
+    "title": "เรียนสด 1 วัน / เข้าใจภาพจริงเร็วกว่า",
+    "angle": "Offer",
+    "template": "poster",
+    "file": "v27-classroom-energy.png",
+    "tag": "live workshop",
+    "proof": "Live intensive format",
+    "cta": "ดูรายละเอียดรอบถัดไป"
+  },
+  {
+    "slug": "v28-build-first-agent",
+    "title": "สร้าง AI Agent ตัวแรก / ให้ธุรกิจของคุณ",
+    "angle": "Offer",
+    "template": "split",
+    "file": "v28-build-first-agent.png",
+    "tag": "build your first agent",
+    "proof": "Zero to practical",
+    "cta": "รับรายละเอียดรอบเรียน"
+  },
+  {
+    "slug": "v29-future-proof",
+    "title": "ถ้าคุณไม่เรียนรู้ AI ตอนนี้ / ต้นทุนจะสูงขึ้นเรื่อย ๆ",
+    "angle": "Urgency",
+    "template": "statement",
+    "file": "v29-future-proof.png",
+    "tag": "future-proof",
+    "proof": "Adapt before forced to",
+    "cta": "ดู workshop นี้"
+  },
+  {
+    "slug": "v30-dont-wait",
+    "title": "คุณไม่จำเป็นต้องพร้อมทั้งหมด / ก่อนเริ่มสร้าง AI Agent",
+    "angle": "Urgency",
+    "template": "poster",
+    "file": "v30-dont-wait.png",
+    "tag": "do not wait",
+    "proof": "1 day to clarity",
+    "cta": "ขอรายละเอียดทันที"
+  }
+]
