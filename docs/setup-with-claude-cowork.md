@@ -114,11 +114,13 @@ Name them to match what's in `manifest.json` — the `file` field in each entry 
 ## Step 7 — Preview Locally or Deploy
 
 **Local preview:**
-Open `index.html` directly in your browser. If images don't load, use a local server:
+You must use a local server — opening `index.html` directly in your browser will not work because the app loads `manifest.json` via `fetch()`, which browsers block on the `file://` protocol. Run this from inside your project folder:
 
 ```bash
 npx serve .
 ```
+
+Then open `http://localhost:3000` in your browser.
 
 **Deploy to Vercel:**
 If you have a GitHub account, push your folder to a repo and connect it to [vercel.com](https://vercel.com). Your review board will be live at a public URL in under a minute.

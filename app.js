@@ -11,6 +11,7 @@
   // ── DOM refs ───────────────────────────────────────────────
   const grid = document.getElementById('ad-grid');
   const emptyState = document.getElementById('empty-state');
+  const statTotal = document.getElementById('stat-total');
   const statVisible = document.getElementById('stat-visible');
   const angleFilters = document.getElementById('angle-filters');
   const modal = document.getElementById('modal');
@@ -29,6 +30,7 @@
     .then(r => r.json())
     .then(data => {
       ads = data;
+      statTotal.textContent = ads.length;
       buildAngleChips();
       applyFilters();
     })
