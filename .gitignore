@@ -15,10 +15,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment files
+# Environment files — never commit real API keys
 .env
 .env.local
 .env.*.local
+# .env.example is safe to commit (no real keys)
+
+# Brand materials — kept local, not committed
+brand/brand-book/*
+brand/reference-images/*
+brand/generated-briefs/*
+!brand/brand-book/.gitkeep
+!brand/reference-images/.gitkeep
+!brand/generated-briefs/.gitkeep
 
 # Vercel
 .vercel

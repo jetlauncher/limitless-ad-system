@@ -4,11 +4,28 @@ Use this template to prompt Claude (or another AI) to generate ad copy and creat
 
 Copy the section you need, fill in the `[brackets]`, and paste it into Claude Code, Claude Cowork, or Claude.ai.
 
+**Before using any prompt below:** share your brand brief first. If you've completed the brand questionnaire, upload `brand/generated-briefs/brand-brief.md` and tell Claude to read it. This keeps every generation session on-brand.
+
+---
+
+## Prompt 0 — Load Your Brand Brief (Always Start Here)
+
+```
+Before we start, please read my brand brief:
+[paste the contents of brand/generated-briefs/brand-brief.md here,
+ or upload the file directly if using Claude Cowork]
+
+Confirm that you've read it and summarize the key creative constraints
+I should know you've noted: voice, visual style, words to avoid, and CTA style.
+```
+
+---
+
 ---
 
 ## Prompt 1 — Generate Ad Concepts From a Brief
 
-Use this after filling in your `ad-brief-template.md`.
+Use this after filling in your `ad-brief-template.md` and loading your brand brief (Prompt 0).
 
 ```
 I'm running a paid ad campaign and need to generate creative concepts.

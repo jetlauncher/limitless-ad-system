@@ -2,7 +2,7 @@
 
 Claude Code is an AI coding assistant that runs in your terminal. You give it instructions in plain English, and it reads, writes, and edits files in your project folder. You do not need to know how to code to use it.
 
-This guide walks you through setting up your own ad creative review board using Claude Code.
+This guide walks you through the full setup: adding your API key, preparing your brand intake, generating creatives, and reviewing them in the board.
 
 ---
 
@@ -10,7 +10,19 @@ This guide walks you through setting up your own ad creative review board using 
 
 - [Node.js](https://nodejs.org) installed (version 18 or higher)
 - Claude Code installed: `npm install -g @anthropic-ai/claude-code`
-- A folder with your ad images ready (PNG or JPG)
+- An OpenAI or OpenRouter API key (see [docs/api-key-setup.md](api-key-setup.md))
+
+---
+
+## Step 0 — Add Your API Key
+
+Before Claude can generate anything, it needs a key.
+
+```bash
+cp .env.example .env
+```
+
+Open `.env` and fill in your key. Not sure which key to get? See [docs/api-key-setup.md](api-key-setup.md).
 
 ---
 
@@ -37,9 +49,35 @@ Claude Code will open and read your project. You'll see a prompt where you can t
 
 ---
 
-## Step 3 — Tell Claude About Your Campaign
+## Step 3 — Prepare Your Brand Intake
 
-Paste this into the Claude Code prompt (fill in your own details):
+Before generating anything, give Claude your creative direction. Two options:
+
+**Option A — Questionnaire (recommended for new brands):**
+
+Open `templates/brand-questionnaire.md`, fill it in, and save the result to `brand/generated-briefs/brand-brief.md`. Then tell Claude:
+
+```
+Please read brand/generated-briefs/brand-brief.md before we start generating.
+Use it as the creative brief for everything in this session.
+```
+
+**Option B — Brand book (for established brands):**
+
+Drop your brand PDF into `brand/brand-book/` and any logos or reference images into `brand/reference-images/`. Then tell Claude:
+
+```
+Please read the brand book in brand/brand-book/ and the reference images in brand/reference-images/.
+Synthesize a creative brief and save it to brand/generated-briefs/brand-brief.md.
+```
+
+See [docs/brand-intake.md](brand-intake.md) for the full walkthrough.
+
+---
+
+## Step 4 — Tell Claude About Your Campaign
+
+Once Claude has your brand context, paste this (fill in your own details):
 
 ```
 I'm setting up an ad review board for my business. Here's my campaign:
@@ -49,6 +87,7 @@ Audience: [Who it's for — e.g. "Non-technical entrepreneurs aged 35-55 in Bang
 Key pain points: [List 2-3 — e.g. "Behind on AI, think it's only for developers"]
 Core angles I want to test: [e.g. "Pain, Offer, Social Proof, Urgency"]
 
+My brand brief is in brand/generated-briefs/brand-brief.md — please use it for tone and style.
 My images are in: assets/originals/ and assets/alternatives/
 
 Please update manifest.json to reflect my campaign. Use the existing entries as a format guide.
@@ -58,7 +97,7 @@ Claude Code will read your image files, check the folder structure, and update `
 
 ---
 
-## Step 4 — Generate Ad Copy Variations
+## Step 5 — Generate Ad Copy Variations
 
 Once your brief is in place, ask Claude to generate variations:
 
@@ -79,7 +118,7 @@ Review the output, pick the strongest variations, and use them when briefing you
 
 ---
 
-## Step 5 — Add Your Images
+## Step 6 — Add Your Images
 
 Drop your image files into:
 
@@ -102,7 +141,7 @@ Use my campaign angles and notes from the brief we discussed.
 
 ---
 
-## Step 6 — Preview the Board
+## Step 7 — Preview the Board
 
 ```bash
 npx serve .
@@ -118,7 +157,7 @@ The angle filters aren't showing up. Can you check manifest.json and make sure e
 
 ---
 
-## Step 7 — Deploy to Vercel
+## Step 8 — Deploy to Vercel
 
 When you're happy with the board:
 

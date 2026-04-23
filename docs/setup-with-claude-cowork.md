@@ -2,7 +2,7 @@
 
 Claude Cowork is a browser-based workspace where you can work alongside Claude on projects — uploading files, reviewing output, and giving feedback — without using a terminal.
 
-This guide is for students who prefer a visual, no-terminal workflow.
+This guide is for students who prefer a visual, no-terminal workflow. It covers the full setup: API keys, brand intake, ad generation, and reviewing the board.
 
 ---
 
@@ -28,30 +28,70 @@ You'll have a folder called `limitless-ad-system`.
 
 ---
 
-## Step 2 — Open Claude Cowork
+## Step 2 — Add Your API Key
+
+Claude Cowork runs in your browser and doesn't read `.env` files directly. At the start of your session, paste your API key into the session context when Claude asks, or include it explicitly in your first message if you're running a generation workflow outside of Cowork.
+
+Not sure which key to get? See [docs/api-key-setup.md](api-key-setup.md) — you need either an OpenAI key or an OpenRouter key.
+
+Do not paste your key into any file you plan to share or upload to GitHub.
+
+---
+
+## Step 3 — Open Claude Cowork
 
 Go to [claude.ai/cowork](https://claude.ai) and start a new project or session.
 
-Upload the following files from your `limitless-ad-system` folder:
+Upload the following files from your `limitless-ad-system` folder at the start of every session:
 
 - `manifest.json`
-- `examples/agent-workshop/brief.md` (as a reference example)
+- `brand/generated-briefs/brand-brief.md` (your brand brief — see Step 4)
+- `examples/agent-workshop/brief.md` (as a reference example, optional)
 - `templates/ad-brief-template.md`
 
 ---
 
-## Step 3 — Fill In Your Brief
+## Step 4 — Prepare Your Brand Intake
 
-Open `templates/ad-brief-template.md` in any text editor (Notepad, TextEdit, VS Code). Fill in your campaign details:
+Before generating anything, give Claude your creative direction.
+
+**Option A — Answer the questionnaire (fastest for new brands):**
+
+Open `templates/brand-questionnaire.md` in any text editor (Notepad, TextEdit, VS Code). Fill in your campaign details:
 
 - What you're offering
 - Who you're targeting
-- Their pain points
-- The angles you want to test
+- Their mindset, fears, and language
+- Your visual style and tone of voice
+- Words to use and avoid
+- CTA preferences
 
-Save it, then upload the filled-in brief to your Claude Cowork session.
+Save it, then upload the filled-in questionnaire to your Claude Cowork session. Tell Claude:
 
-Tell Claude:
+```
+Here's my completed brand questionnaire. Please read it and use it as
+the creative brief for everything we generate today.
+```
+
+**Option B — Drop in your brand book:**
+
+Upload your brand PDF and any reference images to the session. Tell Claude:
+
+```
+Here is our brand guide and some reference images.
+Please read them and write a creative brief that captures our brand voice,
+visual style, and key messages. I'll reuse this brief across sessions.
+```
+
+See [docs/brand-intake.md](brand-intake.md) for the full walkthrough.
+
+---
+
+## Step 5 — Fill In Your Campaign Brief
+
+Open `templates/ad-brief-template.md` in any text editor. Fill in the campaign-specific details (offer, audience, angles to test). This is separate from the brand brief — it's campaign-level context.
+
+Upload it and tell Claude:
 
 ```
 Here's my campaign brief. I want to build an ad review board for this campaign.
@@ -60,7 +100,7 @@ Please review the brief and let me know if anything is unclear before we start.
 
 ---
 
-## Step 4 — Generate Ad Concepts
+## Step 6 — Generate Ad Concepts
 
 Once Claude understands your brief, ask it to produce variations:
 
@@ -81,7 +121,7 @@ Copy the output into a document. These become your ad titles, notes, and CTAs in
 
 ---
 
-## Step 5 — Update manifest.json
+## Step 7 — Update manifest.json
 
 Ask Claude to update the manifest based on your new concepts:
 
@@ -98,7 +138,7 @@ Claude will produce an updated `manifest.json`. Download it and replace the orig
 
 ---
 
-## Step 6 — Add Your Images
+## Step 8 — Add Your Images
 
 Put your image files into the right folders:
 
@@ -111,7 +151,7 @@ Name them to match what's in `manifest.json` — the `file` field in each entry 
 
 ---
 
-## Step 7 — Preview Locally or Deploy
+## Step 9 — Preview Locally or Deploy
 
 **Local preview:**
 You must use a local server — opening `index.html` directly in your browser will not work because the app loads `manifest.json` via `fetch()`, which browsers block on the `file://` protocol. Run this from inside your project folder:
@@ -134,7 +174,7 @@ I'm not a developer — please keep it simple.
 
 ---
 
-## Step 8 — Iterate
+## Step 10 — Iterate
 
 As you review your creative board, use Claude Cowork to:
 
